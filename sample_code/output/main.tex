@@ -21,7 +21,7 @@ colorlinks=true,
   
 \title{Homework Sample TeX Code}
 \author{Economics 7103}
-\date{Spring semester 2020}
+\date{Spring semester 2021}
   
 \begin{document}
   
@@ -52,7 +52,7 @@ You can \textit{automatically} reference table and figure numbers using \verb!\l
 \section{Sample kernel density plot}
 It is nice to center tables and figures.  When making figures, try to avoid using red and green colors together for accessibility.  See figure \ref{fig:samplehist}.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[scale = 0.7]{samplehist.eps}
     \caption{Sample kernel density plot of the outcome variable.}
@@ -64,7 +64,7 @@ You can see that tables can be updated and input into the main .tex file automat
 
 See table \ref{tab:sampleoutput}:
 
-\begin{table}[h]
+\begin{table}[ht]
     \centering
     \input{sampleoutput.tex}
     \caption{Sample regression output table with confidence intervals! Confidence intervals bootstrapped with 1000 replications.  One of the most important things to reference in a table caption is what standard errors you used.  It can also be useful to reference the estimating equation if that is in text. See equation \ref{eq:betahat} for the OLS estimator.}
@@ -74,7 +74,7 @@ See table \ref{tab:sampleoutput}:
 \section{Sample regression visualization with CI error bars}
 I really like using confidence intervals to express uncertainty about the estimates \citep[see e.g.,][]{zm2009}.  As a rule, it is better to display your results as images rather than as tables, though this is not always feasible. See figure \ref{fig:samplebars} for an example of how you could choose to display OLS estimates with confidence intervals.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[scale = 0.7]{samplebars.eps}
     \caption{Regression coefficient estimates with 95\% confidence intervals bootstrapped using 1,000 replications.}
